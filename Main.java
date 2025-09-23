@@ -54,7 +54,7 @@ public class Main{
         else if(value>=51 && value<=60){
             System.out.println("D grade");
         }
-        else if(value<50){
+        else if(value<50 && value>=0){
             System.out.println("F grade");
         }
         else{
@@ -64,3 +64,4 @@ public class Main{
     }
 
 }
+
