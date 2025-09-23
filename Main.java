@@ -33,5 +33,34 @@ public class Main{
         
         //checking the greatest among 3 numbers
         System.out.println(((a>b)&&(a>c))?"A is greater":(b>c)?"B is greater":"C is greater");
+
+        //Switch case to determine grade
+        int value;
+        Scanner scan= new Scanner(System.in);
+        System.out.print("Enter marks:");
+        value=scan.nextInt();
+        if(value>=91 && value<=100){
+            System.out.println("O grade");
+        }
+        else if(value>=81 && value<=90){
+            System.out.println("A grade");
+        }
+        else if(value>=71 && value<=80){
+            System.out.println("B grade");
+        }
+        else if(value>=61 && value<=70){
+            System.out.println("C grade");
+        }
+        else if(value>=51 && value<=60){
+            System.out.println("D grade");
+        }
+        else if(value<50){
+            System.out.println("F grade");
+        }
+        else{
+            System.out.println("Invalid");
+        }
+
     }
+
 }
