@@ -60,8 +60,22 @@ public class Main{
         else{
             System.out.println("Invalid");
         }
+        
+        //nested loop with labels
+        a:
+        for(int i=1;i<=5;i++){
+            b:
+            for(int j=1;j<=5;j++){
+            System.out.println(i+" "+j);
+            if(i==3){
+                break a;
+            }
+            }
+        }
+
 
     }
 
 }
+
 
