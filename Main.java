@@ -72,10 +72,13 @@ public class Main{
             }
             }
         }
-
-
+        System.out.println(" ");
+        //condition stuff
+        for(int i=0,j=0;i<5&&j<3;i++,j++){
+            System.out.println(i+" "+j);
+        }
     }
-
 }
+
 
 
