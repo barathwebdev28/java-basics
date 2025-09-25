@@ -153,8 +153,26 @@ public class Main{
             }
             System.out.println();
         }
+
+        //Sum of first and last two digits
+        int n;
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter num: ");
+        n=sc.nextInt();
+        if(n<999){
+            System.out.println("invalid");
+        }
+        else{
+            int last=n%100;
+            int first=n;
+            while(first>99){
+                first=first/10;
+            }
+            System.out.println(last+first);
+        }
     }
 }
+
 
 
 
