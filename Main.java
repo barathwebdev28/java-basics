@@ -98,8 +98,24 @@ public class Main{
             }
         }
         System.out.println((s==a)?"Perfect number":"Not a perfect number");
+
+        //Fibonacci series
+        int n;
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        n=sc.nextInt();
+        int x=0;
+        int y=1;
+        System.out.print(x+" "+y+" ");
+        for(int i=1;i<n-1;i++){
+            int s= x+y;
+            System.out.print(s+" ");
+            x=y;
+            y=s;
+        }
     }
 }
+
 
 
 
