@@ -77,8 +77,30 @@ public class Main{
         for(int i=0,j=0;i<5&&j<3;i++,j++){
             System.out.println(i+" "+j);
         }
+        //Automorphic number
+        int n;
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        n=sc.nextInt();
+        int pow=n*n;
+        int nRem= n%10;
+        int pRem=pow%10;
+        System.out.println((nRem==pRem)?"Automorphic":"Not automorphic");
+
+        //Perfect number
+        int a;
+        Scanner sc= new Scanner(System.in);
+        a=sc.nextInt();
+        int s=0;
+        for(int i=1;i<=a/2;i++){
+            if(a%i==0){
+                s=s+i;
+            }
+        }
+        System.out.println((s==a)?"Perfect number":"Not a perfect number");
     }
 }
+
 
 
 
